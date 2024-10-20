@@ -1,39 +1,66 @@
+# title: Hello, world! I'm Ryan Zhou
+# description: > # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+# permalink: ':title/'
+# baseurl: "" # the base URL of your site
+# url: "https://ryanchou24.github.io" # the full URL to your site
+# # baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
+# # url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# site-twitter: #if your site has a twitter account, enter it here
+
+# # Author Settings
+# author: Ryan Zhou # add your name
+# author-img: david-freeman.jpg # add your photo
+# about-author: I am a goat focusing on front-end development. Always hungry to keep learning. # add description
+# social-twitter: # add your Twitter handle
+# social-facebook: # add your Facebook handle
+# social-github: artemsheludko # add your Github handle
+# social-linkedin: # add your Linkedin handle
+# social-email: # add your Email address
+
+# # Disqus
+# discus-identifier: mr-brown # add your discus identifier
+
+# # Tracker
+# analytics: # Google Analytics
+
+# # Build Settings
+# markdown: kramdown
+# plugins:
+#   - jekyll-sitemap
+#   - jekyll-paginate
+#   - jemoji
+
+# paginate: 8
+# paginate_path: "/page/:num"
+
+# exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
 title: Hello, world! I'm Ryan Zhou
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Write an awesome description for your new site here.
 permalink: ':title/'
-baseurl: "" # the base URL of your site
-url: "https://ryanchou24.github.io" # the full URL to your site
-# baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+baseurl: ""  # Should be empty for root GitHub Pages URL
+url: "https://ryanchou24.github.io"  # Correct URL for your site
 
-# Author Settings
-author: Ryan Zhou # add your name
-author-img: david-freeman.jpg # add your photo
-about-author: I am a goat focusing on front-end development. Always hungry to keep learning. # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
-social-linkedin: # add your Linkedin handle
-social-email: # add your Email address
+# Theme settings
+theme: minima  # Or the theme you are using
 
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
+# Author and social media settings
+author: Ryan Zhou
+author-img: david-freeman.jpg
+about-author: I am a goat focusing on front-end development.
 
-# Tracker
-analytics: # Google Analytics
+# Pagination
+paginate: 8
+paginate_path: "/page/:num"
 
-# Build Settings
-markdown: kramdown
+# Plugins
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
-
-paginate: 8
-paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
