@@ -39,104 +39,33 @@
 # exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
 
 # Site Settings
-title: "Hello, I'm Ryan Zhou"
-description: "Product Manager & Software Developer with a passion for Web3&AI."
+title: "Ryan Zhou - Product Manager & Developer"
+description: "Product Manager and Front-End Developer focused on delivering seamless user experiences and impactful AI products."
 permalink: ":title/"
-baseurl: ""  # Keep empty for GitHub Pages root
+baseurl: ""  # Keep this empty since you're hosting at the root
 url: "https://ryanchou24.github.io"  # Your GitHub Pages URL
-lang: "en"  # Default language
 
-# Author Info
-author:
-  name: "Ryan Zhou"
-  avatar: "/assets/img/ryan-avatar.jpg"  # Update with your actual avatar path
-  bio: "Product Manager and Software Developer, passionate about AI-driven products and front-end development. Experienced in managing cross-functional teams, launching products, and designing user experiences."
-  location: "Berkeley, CA"
-  email: "ryanzhou@berkeley.edu"
-  social:
-    github: "Ryanchou24"
-    linkedin: "zhongxing-zhou"
-    twitter: "ryanchou24"
-    facebook: ""
+# Author Information
+author: "Ryan Zhou"
+author-img: "ryan-avatar.jpg"  # Update with the actual path of your avatar image
+about-author: "Product Manager and Front-End Developer focused on leveraging AI and building scalable solutions."
+email: "ryanzhou@example.com"  # Update with your email
 
-# Social Links
-social:
-  github: "https://github.com/Ryanchou24"
-  linkedin: "https://www.linkedin.com/in/zhongxing-zhou/"
-  twitter: "https://twitter.com/ryanchou24"
-
-# SEO and Analytics
-google_analytics: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID"  # Add your Google Analytics tracking ID
-sitemap:
-  changefreq: "weekly"
-  priority: 0.7
-  exclude: 
-    - "/404.html"
-
-# Theme Settings
-theme: minima  # Replace with your custom theme if using one
-
-# Pagination
-paginate: 5  # Number of posts per page
-paginate_path: "/page/:num"
+# Social Media Links
+social-twitter: "ryanchou24"
+social-github: "Ryanchou24"
+social-linkedin: "zhongxing-zhou"
 
 # Plugins
 plugins:
-  - jekyll-sitemap  # Generates sitemap.xml
-  - jekyll-seo-tag  # Improves SEO with meta tags
-  - jekyll-paginate  # Handles pagination
-  - jemoji  # Adds emoji support
-  - jekyll-feed  # Adds RSS feed support
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-# Markdown Settings
+# Build Settings
 markdown: kramdown
-kramdown:
-  input: GFM  # GitHub-Flavored Markdown
+paginate: 5  # Number of posts per page
+paginate_path: "/page/:num"
 
-# Exclude from Build
-exclude:
-  - "node_modules"
-  - "gulpfile.js"
-  - "package.json"
-  - "yarn.lock"
-  - "README.md"
-
-# Professional Experience Section for the Home Page
-professional_experience:
-  - title: "AI Product Manager"
-    company: "Stealth Startup (Led by Musical.ly's Founder)"
-    location: "Shanghai, China"
-    date: "Mar 2024 – Jul 2024"
-    description: |
-      Led product development for an AI messaging feature, improving retention by 2% through churn prediction modeling. Spearheaded efforts to reduce NSFW content by 50%, integrating a BERT model into the platform.
-  - title: "Product Manager"
-    company: "TikTok"
-    location: "Shanghai, China"
-    date: "Sep 2023 – Jan 2024"
-    description: |
-      Managed end-to-end product development for the TikTok Creator Academy, boosting click-through rates by 5%. Conducted user interviews to enhance creator satisfaction and improve traffic incentives.
-  - title: "Technical Consultant"
-    company: "FTI Consulting"
-    location: "Shanghai, China"
-    date: "May 2021 – Aug 2021"
-    description: |
-      Conducted forensic analysis and e-discovery for legal investigations, leveraging SQL and Nuix Discover to streamline reporting processes.
-
-# Skills Section for the Home Page
-skills:
-  programming_languages:
-    - "C++"
-    - "Python"
-    - "Java"
-    - "JavaScript"
-    - "SQL"
-    - "SAS"
-  tools:
-    - "HTML"
-    - "React"
-    - "Git"
-    - "AWS"
-    - "Flask"
-    - "MongoDB"
-    - "Scikit-learn"
-    - "PyTorch"
+# Exclude unnecessary files from the build
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "README.md"]
