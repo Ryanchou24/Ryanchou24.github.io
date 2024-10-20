@@ -23,20 +23,17 @@ layout: main
 
 {% for post in paginator.posts %}
 <article class="post">
+  <!-- Post Thumbnail -->
   {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/img/{{ post.img }}')" href="{{ post.url | prepend: site.baseurl }}" aria-label="Read {{ post.title }}">
-      <img src="{{ site.baseurl }}/assets/img/{{ post.img }}" alt="Thumbnail for {{ post.title }}" style="display: none;">
-    </a>
-  {% else %}
-    <!-- Placeholder for posts without images -->
-    <a class="post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/img/default-placeholder.jpg')" href="{{ post.url | prepend: site.baseurl }}" aria-label="Read {{ post.title }}">
-      <img src="{{ site.baseurl }}/assets/img/default-placeholder.jpg" alt="Default thumbnail" style="display: none;">
+    <a class="post-thumbnail" style="background-image: url({{ site.baseurl }}/assets/img/{{ post.img }})" href="{{ post.url | prepend: site.baseurl }}">
+      <img src="{{ site.baseurl }}/assets/img/{{ post.img }}" alt="{{ post.title }}" style="display: none;">
     </a>
   {% endif %}
 
+  <!-- Post Content -->
   <div class="post-content">
     <h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
     <span class="post-date">{{ post.date | date: '%Y, %b %d' }} — </span>
     <span class="post-words">
       {% capture words %}{{ post.content | number_of_words }}{% endcapture %}
