@@ -1,6 +1,6 @@
 # Site Settings
 title: "Zhongxing (Ryan) Zhou - Product Manager & Developer"
-description: "UC Berkeley & UMich CS + Business graduate."
+description: "Product Manager and Software Developer focused on Web3 and AI innovations. UC Berkeley & UMich CS + Business graduate."
 permalink: ":title/"
 baseurl: ""  # Leave this empty since you're hosting at the root
 url: "https://ryanchou24.github.io"  # Your GitHub Pages URL
@@ -8,7 +8,7 @@ url: "https://ryanchou24.github.io"  # Your GitHub Pages URL
 # Author Information
 author: "Ryan Zhou"
 author-img: "ryanzhou.JPG"  # Ensure you update this with the correct avatar image path
-about-author: "Product Manager and Software Developer focused on Web3 and AI innovations. UC Berkeley & UMich CS + Business graduate."
+about-author: "UC Berkeley & UMich CS + Business graduate."
 email: "ryanzhou@berkeley.edu"  # Corrected email domain to ".edu"
 
 # Social Media Links
