@@ -1,0 +1,41 @@
+---
+layout: post
+title: My Journey in the Stealth Startup Led by Musical.ly's Founder
+date: 2024-10-08 12:30:00 +0300
+description: Reflecting on my experience as an AI Product Manager at a stealth startup focused on enhancing user engagement with AI-driven features.
+img: stealth-startup.jpg
+fig-caption: My time working at a stealth startup led by the founder of Musical.ly.
+tags: [AI, Product Management, Startups, User Engagement]
+---
+
+This year, I had the privilege of working as an **AI Product Manager** at a **stealth startup** led by the founder of **Musical.ly**. During my time there, I contributed to a variety of projects focused on improving **user engagement** through the use of **AI-driven features**.
+
+## Driving Engagement with AI
+
+One of my key contributions was leading the development of the **like/dislike message feature**, taking it from the initial **Product Requirements Document (PRD)** through to its launch. Within the first week, the feature generated over **10,000+ user responses**, making it a vital tool for understanding user preferences and improving the overall platform experience.
+
+In addition, I oversaw the **tracking of over 1,000 user actions**, which helped map out the main user journeys and identify **potential churn points**. Using this data, I was able to develop a **churn rate prediction model**, resulting in a **2% improvement in user retention**.
+
+## Ensuring Content Safety with AI
+
+Working in the AI space also meant addressing the challenge of **NSFW content**. I took on the responsibility of setting **company-wide content standards** and coordinated the labeling of datasets to support the training of a **BERT model**. This model was integrated into the recommendation system, reducing NSFW content by **50%**.
+
+![Working on AI models at the startup]({{site.baseurl}}/assets/img/stealth-startup.jpg)
+
+## Improving Human-AI Interaction
+
+Another key initiative I led was creating benchmarks to quantify the quality of **human-AI interaction**. By evaluating new **LLM models** bi-weekly, we managed to improve the **chat-to-activation conversion rate** by **5%**. This constant iteration helped us refine the AI models and deliver a more seamless interaction between users and the AI.
+
+## Automation and Metrics
+
+To maintain platform stability, I also developed **Python scripts** that automated data reporting and tracked daily metrics. By closely monitoring anomalies across core metrics, I was able to troubleshoot issues and ensure **data integrity**. These improvements boosted **user activation** by an additional **10%**.
+
+## Reflecting on the Experience
+
+My time at the stealth startup allowed me to dive deep into the intersection of **AI technology** and **user experience**. Leading projects that directly influenced **user engagement**, **content safety**, and **platform stability** gave me a broader understanding of how to balance innovation with user needs.
+
+I'm incredibly proud of the work we accomplished, and I look forward to seeing how the lessons learned at this startup will continue to shape my future endeavors in the tech industry.
+
+---
+
+**Are you interested in AI-driven user engagement strategies?** Feel free to connect and share your thoughts in the comments below!
