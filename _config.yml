@@ -1,6 +1,6 @@
 # Site Settings
 title: "Zhongxing (Ryan) Zhou - Product Manager & Developer"
-description: "Product Manager and Software Developer passionate about Web3 & AI. UC Berkeley & UMich CS + Business graduate."
+description: "UC Berkeley & UMich CS + Business graduate."
 permalink: ":title/"
 baseurl: ""  # Leave this empty since you're hosting at the root
 url: "https://ryanchou24.github.io"  # Your GitHub Pages URL
