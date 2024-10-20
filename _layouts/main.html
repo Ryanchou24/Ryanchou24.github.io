@@ -15,16 +15,16 @@ layout: default
     </div>
   </header> <!-- End Header -->
 
-  <!-- Optional Skills Section -->
+  <!-- "About Me" Section -->
   <div class="extra-info">
-    <h4>Skills</h4>
-    <ul>
-      <li>Web3 Development</li>
-      <li>AI & Machine Learning</li>
-      <li>Product Management</li>
-      <li>Front-end Development (React, Vue.js)</li>
-    </ul>
-  </div>
+    <h4>About Me</h4>
+    <p>
+      Hi, I’m **Zhongxing (Ryan) Zhou**! A passionate **Product Manager** and **Software Developer** focused on **Web3** and **AI** innovations. I have a strong background in **Computer Science** and **Business** from **UC Berkeley** and **University of Michigan**.
+    </p>
+    <p>
+      I enjoy creating impactful solutions by combining my expertise in **AI**, **blockchain technologies**, and **product management**.
+    </p>
+  </div> <!-- End About Me Section -->
 
   <footer>
     <section class="contact">
@@ -40,7 +40,7 @@ layout: default
           <li class="social-icon github-icon"><a href="http://github.com/{{site.social-github}}" target="_blank" aria-label="View my GitHub profile"><i class="fa fa-github"></i></a></li>
         {% endif %}
         {% if site.social-linkedin %}
-          <li class="social-icon linkedin-icon"><a href="https://linkedin.com/in/{{site.social-linkedin}}" target="_blank" aria-label="Connect with me on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+          <li class="social-icon linkedin-icon"><a href="https://linkedin.com/in/{{site.social-linkedin}}" target="_blank" aria-label="Connect with me on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-email %}
           <li class="email"><a href="mailto:{{site.social-email}}" aria-label="Send me an email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
@@ -54,9 +54,6 @@ layout: default
   </footer> <!-- End Footer -->
 </aside> <!-- End Sidebar -->
 
-<div class="content-box clearfix">
-  {{ content }}
-</div>
 <div class="content-box clearfix">
   {{ content }}
 </div>
