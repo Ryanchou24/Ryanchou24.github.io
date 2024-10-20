@@ -1,71 +1,43 @@
-# title: Hello, world! I'm Ryan Zhou
-# description: > # this means to ignore newlines until "baseurl:"
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
-# permalink: ':title/'
-# baseurl: "" # the base URL of your site
-# url: "https://ryanchou24.github.io" # the full URL to your site
-# # baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
-# # url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# site-twitter: #if your site has a twitter account, enter it here
-
-# # Author Settings
-# author: Ryan Zhou # add your name
-# author-img: david-freeman.jpg # add your photo
-# about-author: I am a goat focusing on front-end development. Always hungry to keep learning. # add description
-# social-twitter: # add your Twitter handle
-# social-facebook: # add your Facebook handle
-# social-github: artemsheludko # add your Github handle
-# social-linkedin: # add your Linkedin handle
-# social-email: # add your Email address
-
-# # Disqus
-# discus-identifier: mr-brown # add your discus identifier
-
-# # Tracker
-# analytics: # Google Analytics
-
-# # Build Settings
-# markdown: kramdown
-# plugins:
-#   - jekyll-sitemap
-#   - jekyll-paginate
-#   - jemoji
-
-# paginate: 8
-# paginate_path: "/page/:num"
-
-# exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
 # Site Settings
 title: "Ryan Zhou - Product Manager & Developer"
-description: "Product Manager and Front-End Developer focused on delivering seamless user experiences and impactful AI products."
+description: "Product Manager and Software Developer passionate about Web3 & AI. UC Berkeley & UMich CS + Business graduate."
 permalink: ":title/"
-baseurl: ""  # Keep this empty since you're hosting at the root
+baseurl: ""  # Leave this empty since you're hosting at the root
 url: "https://ryanchou24.github.io"  # Your GitHub Pages URL
 
 # Author Information
 author: "Ryan Zhou"
-author-img: "ryan-avatar.jpg"  # Update with the actual path of your avatar image
-about-author: "Product Manager and Front-End Developer focused on leveraging AI and building scalable solutions."
-email: "ryanzhou@example.com"  # Update with your email
+author-img: "ryan-avatar.jpg"  # Ensure you update this with the correct avatar image path
+about-author: "Product Manager and Software Developer focused on Web3 and AI innovations."
+email: "ryanzhou@berkeley.edu"  # Corrected email domain to ".edu"
 
 # Social Media Links
-social-twitter: "ryanchou24"
-social-github: "Ryanchou24"
-social-linkedin: "zhongxing-zhou"
+social:
+  twitter: "ryanchou24"
+  github: "Ryanchou24"
+  linkedin: "zhongxing-zhou"
 
-# Plugins
+# SEO and Sitemap Plugins
 plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
+  - jekyll-sitemap   # Auto-generate sitemap for SEO
+  - jekyll-seo-tag   # Adds SEO meta tags to your pages
+  - jemoji           # Adds emoji support
 
-# Build Settings
-markdown: kramdown
+# Pagination Settings
 paginate: 5  # Number of posts per page
 paginate_path: "/page/:num"
 
-# Exclude unnecessary files from the build
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "README.md"]
+# Markdown Settings
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub-Flavored Markdown for more features
+
+# Exclude unnecessary files from build process
+exclude:
+  - "node_modules"
+  - "gulpfile.js"
+  - "package.json"
+  - "yarn.lock"
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
