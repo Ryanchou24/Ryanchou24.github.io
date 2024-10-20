@@ -17,30 +17,40 @@ layout: default
 
   <!-- "About Me" Section -->
   <div class="extra-info">
-  <h4>About Me</h4>
-  <p>
-    I’m Zhongxing (Ryan) Zhou, a Product Manager, entrepreneur, and Software Developer with a strong focus on Web3 and AI innovations. 
-  </p>
-</div> <!-- End About Me Section -->
+    <h4>About Me</h4>
+    <p>
+      I’m Zhongxing (Ryan) Zhou, a Product Manager, entrepreneur, and Software Developer with a strong focus on Web3 and AI innovations.
+    </p>
+  </div> <!-- End About Me Section -->
 
   <footer>
     <section class="contact">
       <h3 class="contact-title">Contact me</h3>
       <ul>
         {% if site.social-twitter %}
-          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank" aria-label="Follow me on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank" aria-label="Follow me on Twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
         {% endif %}
         {% if site.social-facebook %}
-          <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank" aria-label="Follow me on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank" aria-label="Follow me on Facebook">
+            <i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
         {% endif %}
         {% if site.social-github %}
-          <li class="social-icon github-icon"><a href="http://github.com/{{site.social-github}}" target="_blank" aria-label="View my GitHub profile"><i class="fa fa-github"></i></a></li>
+          <li class="social-icon github-icon"><a href="http://github.com/{{site.social-github}}" target="_blank" aria-label="View my GitHub profile">
+            <i class="fa fa-github"></i></a>
+          </li>
         {% endif %}
         {% if site.social-linkedin %}
-          <li class="social-icon linkedin-icon"><a href="https://linkedin.com/in/{{site.social-linkedin}}" target="_blank" aria-label="Connect with me on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="social-icon linkedin-icon"><a href="https://linkedin.com/in/{{site.social-linkedin}}" target="_blank" aria-label="Connect with me on LinkedIn">
+            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
         {% endif %}
         {% if site.social-email %}
-          <li class="email"><a href="mailto:{{site.social-email}}" aria-label="Send me an email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li class="email"><a href="mailto:{{site.social-email}}" aria-label="Send me an email">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </li>
         {% endif %}
       </ul>
     </section> <!-- End Section Contact -->
@@ -52,5 +62,7 @@ layout: default
 </aside> <!-- End Sidebar -->
 
 <div class="content-box clearfix">
+  {{ content }}
+</div>
   {{ content }}
 </div>
