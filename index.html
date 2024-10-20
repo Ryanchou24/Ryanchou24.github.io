@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: main
 ---
 {% for post in paginator.posts %}
@@ -16,4 +16,46 @@ layout: main
 </article>
 {% endfor %}
 
+{% include pagination.html %} -->
+---
+layout: main
+---
+
+{% for post in paginator.posts %}
+<article class="post">
+  <!-- Post Thumbnail -->
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/img/{{ post.img }}')" href="{{ post.url | prepend: site.baseurl }}" aria-label="Read {{ post.title }}">
+      <img src="{{ site.baseurl }}/assets/img/{{ post.img }}" alt="Thumbnail for {{ post.title }}" style="display: none;">
+    </a>
+  {% else %}
+    <!-- Placeholder for posts without images -->
+    <a class="post-thumbnail" style="background-image: url('{{ site.baseurl }}/assets/img/default-placeholder.jpg')" href="{{ post.url | prepend: site.baseurl }}" aria-label="Read {{ post.title }}">
+      <img src="{{ site.baseurl }}/assets/img/default-placeholder.jpg" alt="Default thumbnail" style="display: none;">
+    </a>
+  {% endif %}
+
+  <!-- Post Content -->
+  <div class="post-content">
+    <!-- Title -->
+    <h2 class="post-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+    
+    <!-- Post Excerpt -->
+    <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+
+    <!-- Post Date and Read Time -->
+    <span class="post-date">{{ post.date | date: '%Y, %b %d' }}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">
+      {% capture words %}{{ post.content | number_of_words }}{% endcapture %}
+      {% unless words contains "-" %}
+        {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+      {% endunless %}
+    </span>
+  </div>
+</article>
+{% endfor %}
+
+<!-- Pagination -->
 {% include pagination.html %}
