@@ -1,40 +1,154 @@
 <!doctype html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Zhou — Product Builder</title>
+  <meta name="description" content="Ryan Zhou — product builder, AI tinkerer & food explorist. UC Berkeley & UMich grad. Former PM at TikTok, Tiger Securities, and a leading AI startup." />
+  <meta property="og:title" content="Ryan Zhou — Product Builder" />
+  <meta property="og:description" content="Product builder, AI tinkerer & food explorist. Field notes on product, AI, and travel." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663192596677/ecLlawmBhHrUknHQ.png" />
+  <link rel="apple-touch-icon" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663192596677/ecLlawmBhHrUknHQ.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link rel="icon" type="image/png" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663192596677/ecLlawmBhHrUknHQ.png" />
-    <link rel="apple-touch-icon" href="https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663192596677/ecLlawmBhHrUknHQ.png" />
-    <title>Ryan Zhou - Personal Website</title>
-    <!-- Add Google Fonts here, example:
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    -->
-    <script type="module" crossorigin src="/assets/index-BgYoirGb.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-By64j6ew.css">
-  </head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="aurora" aria-hidden="true">
+    <div class="aurora-blob aurora-a"></div>
+    <div class="aurora-blob aurora-b"></div>
+    <div class="aurora-blob aurora-c"></div>
+  </div>
 
-  <body>
+  <!-- ======================= NAV ======================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#/" data-home>
+        <span class="nav-mark">RZ</span>
+        <span class="nav-name">Ryan&nbsp;Zhou</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about" data-section="about">About</a>
+        <a href="#experience" data-section="experience">Experience</a>
+        <a href="#writing" data-section="writing">Writing</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <a class="nav-cta" href="mailto:ryanchou66@gmail.com">Say hi</a>
+        <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <script>
-      // GitHub Pages SPA redirect handler
-      (function(){
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-    </script>
-    <div id="root"></div>
-    <script
-      defer
-      src="https://manus-analytics.com/umami"
-      data-website-id="8f870817-648e-4d51-9c24-325746bc6772"></script>
-  </body>
+  <!-- ======================= HOME ======================= -->
+  <main id="home-view">
 
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">— Berkeley · UMich · TikTok · AI</p>
+        <h1 class="hero-title reveal">
+          Building products<br />
+          people <em class="serif shimmer">actually love</em>
+        </h1>
+        <p class="hero-type reveal">
+          <span class="type-prefix">I'm a&nbsp;</span><span id="typewriter"></span><span class="caret" aria-hidden="true"></span>
+        </p>
+        <p class="hero-sub reveal" id="hero-bio"></p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#writing">Read my field notes <span class="btn-arrow">→</span></a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 — About</p>
+          <h2 class="section-title">Curious &amp; hungry,<br /><em class="serif">about everything</em></h2>
+        </div>
+        <div class="bento" id="bento"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 — Experience</p>
+          <h2 class="section-title">Places I've <em class="serif">shipped</em></h2>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section" id="writing">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 — Field Notes</p>
+          <h2 class="section-title">Stories from the <em class="serif">journey</em></h2>
+          <p class="section-sub">Product management, AI, and the occasional pyramid.</p>
+        </div>
+        <div class="posts-grid" id="posts-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-contact" id="contact">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee-track"></div>
+      </div>
+      <div class="container contact-inner reveal">
+        <h2 class="contact-title">Have an idea?<br /><em class="serif shimmer">Let's build it.</em></h2>
+        <p class="contact-sub">AI, consumer products, creator economy — or just great restaurant recommendations. My inbox is open.</p>
+        <div class="contact-actions" id="contact-actions"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= POST READER ======================= -->
+  <main id="post-view" hidden>
+    <article class="post container-narrow">
+      <a class="post-back" href="#writing" data-back>← All field notes</a>
+      <header class="post-head">
+        <div class="post-tags" id="post-tags"></div>
+        <h1 class="post-title" id="post-title"></h1>
+        <p class="post-meta" id="post-meta"></p>
+      </header>
+      <div class="post-body" id="post-body"></div>
+      <footer class="post-foot">
+        <a class="btn btn-ghost" href="#writing" data-back>← Back to all notes</a>
+        <a class="post-next" href="#/" id="post-next"></a>
+      </footer>
+    </article>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="nav-mark">RZ</span>
+        <p>Product Manager · Builder · Food Explorist</p>
+      </div>
+      <div class="footer-right">
+        <p id="footer-copy"></p>
+        <p class="footer-fine">UC Berkeley &amp; UMich — CS + Business</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/main.js"></script>
+  <script defer src="https://manus-analytics.com/umami" data-website-id="8f870817-648e-4d51-9c24-325746bc6772"></script>
+</body>
 </html>
